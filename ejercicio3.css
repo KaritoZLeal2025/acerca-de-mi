@@ -1,0 +1,388 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #363940;
+    line-height: 1.6;
+    overflow-x: hidden; 
+}
+
+.header {
+    background-color: rgb(32, 85, 99);
+    color: white;
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.section {
+    padding: 80px 20px;
+}
+
+.section-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.quien-soy {
+    background-color: #F2F2F2;
+    color: #F2441D;
+    padding-top: 100px;
+}
+
+.quien-soy .section-content {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.imagen-quien-soy {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-left: 40px;
+}
+
+.quien-soy .texto {
+    max-width: 600px;
+    margin-right: 40px;
+}
+
+.quien-soy h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.quien-soy p {
+    font-size: 21px;
+    margin-bottom: 40px; 
+    color: black;
+}
+
+.quien-soy button {
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: #F2441D;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+.quien-soy button:hover {
+    background-color: #F2441D;
+}
+
+.citas {
+    background-color: #D9411E;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.citas .section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.imagen-cita {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.texto-cita p {
+    font-size: 24px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.texto-cita h4 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.proyectos {
+    background-color: #F2F2F2;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.proyectos h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.proyectos-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.proyecto {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+    flex: 1;
+    max-width: 250px;
+    color: #333;
+}
+
+.proyecto img {
+    max-width: 100%;
+    height: auto;
+}
+
+.proyecto h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.proyecto p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.proyecto button {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #F2441D;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.proyecto button:hover {
+    background-color: #F2441D;
+}
+
+.footer {
+    background-color: rgb(20, 48, 56);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+}
+
+@media (max-width: 400px) {
+    body, html {
+        overflow-x: hidden; 
+    }
+
+    .header {
+        padding: 10px 20px; 
+        height: auto; 
+        box-sizing: border-box; 
+    }
+
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px; 
+    }
+
+    .header h1 {
+        font-size: 20px; 
+        margin-bottom: 0; 
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: row; 
+        flex-wrap: wrap; 
+        justify-content: center; 
+        gap: 10px;
+    }
+
+    .nav a {
+        margin: 0;
+        font-size: 16px; 
+    }
+
+    .quien-soy {
+        padding-top: 120px; 
+    }
+
+    .quien-soy .section-content {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .quien-soy .texto, .quien-soy h2, .quien-soy p, .quien-soy button {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .quien-soy h2 {
+        font-size: 30px; 
+        margin-bottom: 15px; 
+    }
+
+    .quien-soy p {
+        font-size: 18px; 
+        margin-bottom: 20px; 
+    }
+
+    .quien-soy button {
+        font-size: 18px; 
+        margin-top: 20px; 
+    }
+
+    .imagen-quien-soy {
+        margin: 0 auto; 
+        width: 90%; 
+        max-width: 250px; 
+    }
+
+    .proyectos-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer p {
+        padding: 0;
+    }
+}
+
+@media (max-width: 700px) {
+    body, html {
+        overflow-x: hidden; 
+    }
+
+    .quien-soy .section-content {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .quien-soy .texto, .quien-soy h2, .quien-soy p, .quien-soy button {
+        margin: 0 auto;
+        text-align: center; 
+    }
+
+    .quien-soy p {
+        margin-bottom: 30px; 
+    }
+
+    .quien-soy button {
+        margin-top: 30px; 
+    }
+
+    .imagen-quien-soy {
+        margin: 0 auto;
+        width: 80%; 
+        max-width: 300px; 
+    }
+
+    .proyectos-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    body, html {
+        overflow-x: hidden; 
+    }
+
+    .quien-soy .section-content {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .quien-soy .texto, .quien-soy h2, .quien-soy p, .quien-soy button {
+        margin: 0 auto;
+        text-align: center; 
+    }
+
+    .quien-soy p {
+        margin-bottom: 30px; 
+    }
+
+    .quien-soy button {
+        margin-top: 30px; 
+    }
+
+    .imagen-quien-soy {
+        margin: 0 auto; 
+        width: 80%; 
+        max-width: 300px; 
+    }
+
+    .proyectos-grid {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .proyecto {
+        max-width: 45%; 
+    }
+}
+/* Para pantallas de más de 1000px */
+@media (min-width: 1001px) {
+    .quien-soy .section-content {
+        flex-direction: row;
+        gap: 60px;
+        text-align: left;
+    }
+
+    .quien-soy .texto, .quien-soy h2, .quien-soy p, .quien-soy button {
+        margin: 0;
+    }
+
+    .proyectos-grid {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .proyecto {
+        max-width: 250px;
+    }
+
+        .quien-soy p {
+            margin-bottom: 10px; 
+        }
+    
+        .quien-soy button {
+            margin-top: 20px; 
+        }
+    }
